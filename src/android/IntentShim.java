@@ -173,7 +173,7 @@ public class IntentShim extends CordovaPlugin {
                 this.cordova.getActivity().registerReceiver(
                     broadcastReceiver,
                     filter,
-                    Context.RECEIVER_NOT_EXPORTED
+                    Context.RECEIVER_EXPORTED
                 );
             } else {
                 this.cordova.getActivity().registerReceiver(
